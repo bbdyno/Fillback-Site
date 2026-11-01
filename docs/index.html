@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>다시채움 · Fillback</title>
+<meta name="description" content="한 번 입력한 양식을 기억했다가 그대로 다시 채우는 브라우저 확장. Remembers the forms you fill in and fills them again.">
+<link rel="icon" href="img/32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<header><nav>
+  <a class="name" href="./"><img src="img/128.png" alt=""><span data-lang="ko">다시채움</span><span data-lang="en">Fillback</span></a>
+  <a href="#price"><span data-lang="ko">가격</span><span data-lang="en">Pricing</span></a>
+  <a href="privacy.html" data-keep><span data-lang="ko">개인정보</span><span data-lang="en">Privacy</span></a>
+  <a data-switch href="?lang=en"><span data-lang="ko">English</span><span data-lang="en">한국어</span></a>
+</nav></header>
+
+<section class="hero">
+  <div>
+    <h1 data-lang="ko">한 번 입력하면,<br>다음부터는 다시채움.</h1>
+    <h1 data-lang="en">Type it once.<br>Fillback does the rest.</h1>
+    <p class="lede" data-lang="ko">본인인증 창이 시간 초과로 닫혔을 때, 신청서가 오류로 날아갔을 때. 다시 들어가면 지난번에 쓴 그대로 한 번에 채워 드려요.</p>
+    <p class="lede" data-lang="en">When a verification window times out or an application form errors out, go back in and fill it exactly as you did last time, in one click.</p>
+    <div class="cta">
+      <a class="btn primary" href="#install"><span data-lang="ko">무료로 설치하기</span><span data-lang="en">Install free</span></a>
+      <a class="btn" href="#price"><span data-lang="ko">평생 이용권 12,900원</span><span data-lang="en">Lifetime $9.99</span></a>
+    </div>
+    <p class="faint" style="margin-top:14px"><span data-lang="ko">크롬 · 엣지 · 웨일</span><span data-lang="en">Chrome · Edge · Whale</span></p>
+  </div>
+
+  <div class="demo" aria-hidden="true">
+    <div class="bar"><i></i><i></i><i></i></div>
+    <h3 data-lang="ko">간편인증</h3><h3 data-lang="en">Identity verification</h3>
+    <div class="tabs"><span class="on">kakao</span><span>naver</span><span>PASS</span><span>toss</span></div>
+    <div class="row"><label data-lang="ko">이름</label><label data-lang="en">Name</label><div class="box" data-fill="홍길동"></div></div>
+    <div class="row"><label data-lang="ko">생년월일</label><label data-lang="en">Birth date</label><div class="box" data-fill="19900131"></div></div>
+    <div class="row"><label data-lang="ko">휴대폰</label><label data-lang="en">Mobile</label>
+      <div class="split"><div class="box" data-fill="SKT"></div><div class="box" data-fill="010 1234 5678"></div></div></div>
+    <div class="agree"><span class="check"></span><span data-lang="ko">개인정보 이용 동의</span><span data-lang="en">I agree to the terms</span></div>
+    <div class="submit"><span data-lang="ko">인증 요청</span><span data-lang="en">Request</span></div>
+    <div class="chip"><span data-lang="ko">지난번 입력 그대로 채우기 · 5칸</span><span data-lang="en">Fill as last time · 5 fields</span></div>
+  </div>
+</section>
+
+<h2 data-lang="ko">따로 설정할 게 없어요</h2>
+<h2 data-lang="en">Nothing to set up</h2>
+<ol class="steps">
+  <li><span class="no">01</span><div>
+    <h3 data-lang="ko">평소처럼 입력하세요</h3><h3 data-lang="en">Fill in forms as usual</h3>
+    <p data-lang="ko">어느 사이트든 양식을 채우는 순간 다시채움이 칸과 값을 함께 기억해요. 미리 등록해 둘 사이트 목록 같은 건 없어요.</p>
+    <p data-lang="en">Whatever the site, Fillback remembers each field and what you typed as you go. There is no list of supported sites to wait for.</p>
+  </div></li>
+  <li><span class="no">02</span><div>
+    <h3 data-lang="ko">같은 양식이 뜨면 버튼 하나</h3><h3 data-lang="en">One button when the form comes back</h3>
+    <p data-lang="ko">사이트가 칸 이름을 매번 바꿔도, 칸 순서가 조금 달라져도 알아봐요. 누르면 지난번 그대로 채우고, 제출은 직접 하세요.</p>
+    <p data-lang="en">It recognises the form even if the site renames or reorders its fields. Press it to fill everything; submitting stays up to you.</p>
+  </div></li>
+  <li><span class="no">03</span><div>
+    <h3 data-lang="ko">처음 가는 곳도 채워요</h3><h3 data-lang="en">New sites too</h3>
+    <p data-lang="ko">쓰다 보면 이름·생년월일·휴대폰·통신사를 알아서 정리해 두고, 처음 보는 사이트에서도 그 양식이 원하는 모양으로 바꿔 넣어요.</p>
+    <p data-lang="en">Your name, birth date, phone and carrier are picked up along the way and reshaped to whatever a new site asks for.</p>
+  </div></li>
+</ol>
+
+<h2 data-lang="ko">사이트마다 다른 모양도 맞춰서</h2>
+<h2 data-lang="en">Whatever shape a site wants</h2>
+<div class="formats">
+  <div><b data-lang="ko">생년월일</b><b data-lang="en">Birth date</b><code>19900131<br>900131<br>1990-01-31<br>1990 / 01 / 31</code></div>
+  <div><b data-lang="ko">휴대폰</b><b data-lang="en">Mobile</b><code>01012345678<br>010-1234-5678<br>[010] 1234 5678</code></div>
+  <div><b data-lang="ko">통신사</b><b data-lang="en">Carrier</b><code>SKT · SK텔레콤<br>LG U+ · LGU+<br>알뜰폰 (KT망)</code></div>
+</div>
+
+<h2 data-lang="ko">기억하지 않는 것</h2>
+<h2 data-lang="en">What it never keeps</h2>
+<p data-lang="ko">아래 칸은 값을 읽기 전에 건너뛰어요. 저장한 내용은 암호화해서 이 기기에만 두고, 서버로 보내지 않아요.</p>
+<p data-lang="en">These fields are skipped before their value is read. Everything else is encrypted and kept on your device, never sent to a server.</p>
+<ul class="never" data-lang="ko"><li>비밀번호</li><li>인증번호</li><li>보안문자</li><li>카드번호·CVC</li><li>계좌번호</li><li>주민등록번호 뒷자리</li><li>여권·면허 번호</li></ul>
+<ul class="never" data-lang="en"><li>Passwords</li><li>One-time codes</li><li>CAPTCHAs</li><li>Card numbers · CVC</li><li>Account numbers</li><li>National ID numbers</li><li>Passport · licence numbers</li></ul>
+
+<h2 id="price" data-lang="ko">가격</h2>
+<h2 data-lang="en">Pricing</h2>
+<table class="price" data-lang="ko">
+  <thead><tr><th></th><th>무료</th><th>평생 이용권</th></tr></thead>
+  <tbody>
+    <tr><td>가격</td><td class="amount">0원</td><td class="amount">12,900원<br><span class="faint">한 번 결제</span></td></tr>
+    <tr><td>계속 보관하는 양식</td><td>5개</td><td>제한 없음 · 기기 3대</td></tr>
+    <tr><td>그 밖의 양식</td><td>하루 동안 임시 보관</td><td>계속 보관</td></tr>
+    <tr><td>입력 날아갔을 때 되살리기</td><td>✓</td><td>✓</td></tr>
+    <tr><td>내 정보로 처음 가는 사이트 채우기</td><td>✓</td><td>✓</td></tr>
+  </tbody>
+</table>
+<table class="price" data-lang="en">
+  <thead><tr><th></th><th>Free</th><th>Lifetime</th></tr></thead>
+  <tbody>
+    <tr><td>Price</td><td class="amount">$0</td><td class="amount">$9.99<br><span class="faint">one-time</span></td></tr>
+    <tr><td>Forms kept</td><td>5</td><td>Unlimited · 3 devices</td></tr>
+    <tr><td>Other forms</td><td>Kept for a day</td><td>Kept</td></tr>
+    <tr><td>Recover lost input</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Fill new sites from your info</td><td>✓</td><td>✓</td></tr>
+  </tbody>
+</table>
+<p class="faint" style="margin-top:12px"><span data-lang="ko">구독이 아니에요. 7일 안에는 이유를 묻지 않고 전액 환불해 드려요.</span><span data-lang="en">Not a subscription. Full refund within 7 days, no questions asked.</span></p>
+
+<h2 id="install" data-lang="ko">설치</h2>
+<h2 data-lang="en">Install</h2>
+<div class="cta" style="margin-top:0">
+  <!-- Replace with the store listing URLs once published. -->
+  <a class="btn primary" href="#install"><span data-lang="ko">크롬 웹스토어</span><span data-lang="en">Chrome Web Store</span> <small data-lang="ko">심사 중</small><small data-lang="en">in review</small></a>
+  <a class="btn" href="#install"><span data-lang="ko">엣지 애드온</span><span data-lang="en">Edge Add-ons</span> <small data-lang="ko">준비 중</small><small data-lang="en">soon</small></a>
+  <a class="btn" href="#install"><span data-lang="ko">웨일 스토어</span><span data-lang="en">Whale Store</span> <small data-lang="ko">준비 중</small><small data-lang="en">soon</small></a>
+</div>
+
+<h2 data-lang="ko">자주 묻는 질문</h2>
+<h2 data-lang="en">Questions</h2>
+<div data-lang="ko">
+  <details><summary>제출 버튼까지 눌러 주나요?</summary><p>아니요. 채우기까지만 하고, 제출·인증 요청은 직접 눌러요. 보안문자도 직접 입력해요.</p></details>
+  <details><summary>양식이 바뀌면 어떻게 되나요?</summary><p>알아본 칸은 채우고, 새로 생긴 칸만 비워 둬요. 그 칸을 입력하면 저장된 양식이 저절로 고쳐져요.</p></details>
+  <details><summary>다른 사람이 제 컴퓨터를 쓰면요?</summary><p>설정에서 잠금 비밀번호를 정하면 브라우저를 다시 열 때나 한동안 안 쓸 때 비밀번호를 물어요.</p></details>
+  <details><summary>은행 보안 프로그램이 깔린 칸도 되나요?</summary><p>키보드 보안이 걸린 칸은 채워지지 않을 수 있어요. 이런 칸은 대개 비밀번호나 카드번호라 원래 기억하지 않는 칸이에요.</p></details>
+  <details><summary>이용권 키를 잃어버렸어요.</summary><p><a href="https://fillback-api.bbdyno.workers.dev/recover">키 다시 찾기</a>에서 결제한 이메일과 주문번호로 찾을 수 있어요.</p></details>
+</div>
+<div data-lang="en">
+  <details><summary>Does it press submit for me?</summary><p>No. It fills; you submit. CAPTCHAs stay with you too.</p></details>
+  <details><summary>What if the form changes?</summary><p>Fields it recognises are filled and new ones are left empty. Fill those once and the saved form updates itself.</p></details>
+  <details><summary>What if someone else uses my computer?</summary><p>Set a passphrase in settings and Fillback asks for it after a restart or a period of inactivity.</p></details>
+  <details><summary>I lost my license key.</summary><p>Recover it with your email and order number on the <a href="https://fillback-api.bbdyno.workers.dev/recover?lang=en">recovery page</a>.</p></details>
+</div>
+
+<footer>
+  <nav>
+    <a href="terms.html" data-keep><span data-lang="ko">이용약관</span><span data-lang="en">Terms</span></a>
+    <a href="refund.html" data-keep><span data-lang="ko">환불 규정</span><span data-lang="en">Refunds</span></a>
+    <a href="privacy.html" data-keep><span data-lang="ko">개인정보처리방침</span><span data-lang="en">Privacy</span></a>
+    <a href="mailto:della.kimko@gmail.com"><span data-lang="ko">문의</span><span data-lang="en">Contact</span></a>
+  </nav>
+  <!-- Business details required on Korean e-commerce sites: fill in before launch. -->
+  <p class="biz">상호 ○○○ · 대표 ○○○ · 사업자등록번호 ○○○-○○-○○○○○ · 통신판매업 신고 제○○○○-○○○○-○○○○호 · 주소 ○○○ · della.kimko@gmail.com</p>
+</footer>
+</main>
+<script src="site.js"></script>
+</body>
+</html>
